@@ -504,10 +504,15 @@ FOOTER STYLES
     color: #e52d27;
 }
 
+.footer .icon-button .fa-envelope {
+    color: #ffa500;
+}
+
 .footer .icon-button:hover .fa-facebook,
 .footer .icon-button:hover .fa-twitter,
 .footer .icon-button:hover .fa-instagram,
-.footer .icon-button:hover .fa-youtube-play {
+.footer .icon-button:hover .fa-youtube-play,
+.footer .icon-button:hover .fa-envelope {
     color: #ffffff;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -541,6 +546,14 @@ FOOTER STYLES
 
 .footer .icon-button:hover.youtube {
     background-color: #e52d27;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transiton: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.footer .icon-button:hover.email {
+    background-color: #ffa500;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transiton: all .3s ease-in-out;
