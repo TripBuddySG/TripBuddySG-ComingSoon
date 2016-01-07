@@ -75,9 +75,11 @@ NAVBAR STYLES
     border-bottom: 1px solid #ffffff;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a > span {
     color: #ffffff;
     line-height: 25px;
+    font-size: 15px;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -187,9 +189,6 @@ NAVBAR STYLES
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
         color: #ffffff;
         background-color: #159cd1;
-    }
-    .nav .fa {
-        display: none;
     }
     .navbar-img {
         height: 50px;
@@ -355,13 +354,13 @@ MAIN CONTENT STYLES
 
 .about-us-intro,
 .about-us-mission {
-    padding: 20px 0 30px 0;
+    padding: 20px 30px 30px 30px;
     background: #e8f7fd;
 }
 
 .about-us-origin,
 .about-us-team {
-    padding: 20px 0 30px 0;
+    padding: 20px 30px 30px 30px;
     background: #ffffff;
 }
 

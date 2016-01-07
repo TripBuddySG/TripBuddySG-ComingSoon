@@ -11,7 +11,7 @@ $(window).scroll(function () {
     }
 });
 
-// jQuery for Anchor Scrolling Animations:
+// jQuery for Anchor Link Smooth Scrolling:
 $(function () {
     $('a[href*=#]:not([href=#])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -25,4 +25,8 @@ $(function () {
             }
         }
     });
+    $('.navbar-img').click(function() {
+        $('html, body').animate({scrollTop : 0}, 1000);
+		return false;
+    })
 });
