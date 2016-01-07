@@ -208,14 +208,15 @@ JUMBOTRON STYLES
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/jumbotron.jpg) no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 .home-jumbotron #jumbotron-content {
-    position: absolute;
+    position: relative;
     right: 0;
     left: 0;
-    top: 50%;
+    top: 48%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -354,13 +355,13 @@ MAIN CONTENT STYLES
 
 .about-us-intro,
 .about-us-mission {
-    padding: 20px 30px 30px 30px;
+    padding: 20px 0 30px 0;
     background: #e8f7fd;
 }
 
 .about-us-origin,
 .about-us-team {
-    padding: 20px 30px 30px 30px;
+    padding: 20px 0 30px 0;
     background: #ffffff;
 }
 
@@ -417,15 +418,12 @@ MAIN CONTENT STYLES
     text-align: right;
 }
 
-#about_us:before,
-#origin_story:before,
-#mission:before,
-#team:before {
-    content: "";
-    visibility: hidden;
-    display: block;
-    height: 70px;
-    margin: -70px 0 0;
+#about_us,
+#origin_story,
+#mission,
+#team {
+    padding-top: 30px;
+    margin-top: -30px;
 }
 
 @media (max-width: 768px) {
@@ -571,3 +569,12 @@ FOOTER STYLES
         margin-bottom: 15px;
     }
 }
+
+
+/*****************************************
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*****************************************/
